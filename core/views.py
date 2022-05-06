@@ -31,3 +31,28 @@ def communitypage2(request):
 
 def Userintroduction(request):
     return render(request, 'Userintroduction.html')
+
+def consult(request):
+    return render(request, 'consult.html')
+
+def menu(request):
+    return render(request, 'menu.html')
+
+def information(request):
+    return render(request, 'information.html')
+
+def comment(request):
+    return render(request, 'comment.html')
+
+def consultchatroom(request):
+    return render(request, 'consultchatroom.html')
+
+def menuadd(request):
+    return render(request, 'menuadd.html')
+
+def Storeinformation(request):
+    return render(request, 'Storeinformation.html')
+
+def map(request):
+    return render(request, 'map.html')
+
