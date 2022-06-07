@@ -161,17 +161,17 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-
-						<td>
-							干貝水餃
-						</td>
-						<td>
-							8
-						</td>
-						<td>
-							50 /顆
-						</td>
+                {% for menu in menus %}
+                    <tr>
+                        <td>
+                            {{ menu.name }}
+                        </td>
+                        <td>
+                            {{ menu.price }}
+                        </td>
+                        <td>
+                            {{ menu.kcal }}
+                        </td>
 
                         <td> 20 喜歡
                            <button type="button" class="btn btn-info">
@@ -183,91 +183,7 @@
 						</td>
 
 					</tr>
-					<tr>
-
-						<td>
-							招牌水餃
-						</td>
-						<td>
-							6
-						</td>
-						<td>
-							50 /顆
-						</td>
-                        <td> 20 喜歡
-                            <button type="button" class="btn btn-info">
-                                喜歡
-                            </button>
-                            <button type="button" class="btn btn-info">
-                                分析
-                            </button>
-						</td>
-					</tr>
-					<tr>
-
-						<td>
-							韭菜水餃
-						</td>
-						<td>
-							6
-						</td>
-						<td>
-							50 /顆
-						</td>
-                        <td> 20 喜歡
-                            <button type="button" class="btn btn-info">
-                                喜歡
-                            </button>
-                            <button type="button" class="btn btn-info">
-                                分析
-                            </button>
-
-						</td>
-					</tr>
-					<tr>
-
-						<td>
-							酸辣湯
-						</td>
-						<td>
-							30
-						</td>
-						<td>
-							200
-						</td>
-                        <td> 20 喜歡
-                             <button type="button" class="btn btn-info">
-                                喜歡
-                            </button>
-                             <button type="button" class="btn btn-info">
-                                分析
-                            </button>
-						</td>
-					</tr>
-					<tr>
-
-						<td>
-							魚丸湯
-						</td>
-						<td>
-							30
-						</td>
-						<td>
-							150
-						</td>
-                        <td> 20 喜歡
-                            <button type="button" class="btn btn-info">
-                                喜歡
-                            </button>
-                             <button type="button" class="btn btn-info">
-                                分析
-                            </button>
-						</td>
-					</tr>
-
-
-
-
+                {% endfor %}
 				</tbody>
 			</table>
 		</div>
